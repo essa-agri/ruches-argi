@@ -1,0 +1,55 @@
+{
+  "applications": ["core", "notification"],
+  "changelogDate": "20230810095341",
+  "clientRootFolder": "notification",
+  "databaseType": "mongodb",
+  "entityTableName": "alert",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "AlertType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "LIMIT,VARIATION"
+    },
+    {
+      "fieldName": "alertSi",
+      "fieldType": "AlertSi",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "POIDS,TEMPERATURE,HUMIDITE"
+    },
+    {
+      "fieldName": "conditionType",
+      "fieldType": "AlertConditionType",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "INFERIEURE,SUPERIEURE,EGALE,AUGMENTE,DIMINUER"
+    },
+    {
+      "fieldName": "valeur",
+      "fieldType": "Float",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "variation",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "statut",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rucheId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "lastStream",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "notification",
+  "name": "Alert",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

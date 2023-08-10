@@ -1,0 +1,34 @@
+{
+  "applications": ["core", "notification"],
+  "changelogDate": "20230810095641",
+  "clientRootFolder": "notification",
+  "databaseType": "mongodb",
+  "entityTableName": "notification",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rucheName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "rucherName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "microserviceName": "notification",
+  "name": "Notification",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
